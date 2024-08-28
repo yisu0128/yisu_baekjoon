@@ -1,12 +1,9 @@
-def star_tree(n):
-    for i in range(n):
-        # 왼쪽 공백
-        print(" " * (n - i - 1), end="")
-        # 왼쪽 별
-        print("*" * (i + 1), end="")
-        # 오른쪽 별
-        print("*" * i)
-        
-# 입력을 받습니다
 n = int(input().strip())
+
+def star_tree(n):
+    for i in range(0,n):
+        print(" "*(n-i-1), end ="")
+        print("*"*(i+1), end ="")
+        print("*"*i)
+
 star_tree(n)
